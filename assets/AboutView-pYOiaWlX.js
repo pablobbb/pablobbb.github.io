@@ -1,1 +1,0 @@
-import{_ as e,c as o,o as t,a as s}from"./index-BGJiHAu4.js";const c={},_={class:"about"},a=s("h1",null,"About me",-1),n=[a];function r(d,i){return t(),o("div",_,n)}const u=e(c,[["render",r]]);export{u as default};
