@@ -5,10 +5,12 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink to="/">pablobbb</RouterLink>
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">X</a>
+      <RouterLink to="/"><span>&lt;</span>pablobbb<span>/&gt;</span></RouterLink>
+      <div>
+        <a href="https://github.com/pablobbb" target="_blank" alt="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/pablobonucci" target="_blank" alt="LinkedIn">LinkedIn</a>
+        <a href="https://twitter.com/fresh_rapp" target="_blank" alt="X">X</a>
+      </div>
     </nav>
   </header>
   <main>
