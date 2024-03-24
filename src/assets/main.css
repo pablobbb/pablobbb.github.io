@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
-  transition:
+  transition: 
     color 0.5s,
     background-color 0.5s;
   font-family: "Outfit", sans-serif;
@@ -31,11 +31,14 @@ h1 small {
   display: block;
 }
 
-header, footer {
-  position: absolute;
+header,
+footer {
   text-align: center;
-  width: 100%;
   padding: 1rem 0;
+}
+
+header div.social {
+  justify-self: flex-end;
 }
 
 header div.social img {
@@ -54,6 +57,7 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   align-content: space-between;
   align-items: center;
+  justify-items: flex-start;
   font-size: 12px;
 }
 
@@ -78,6 +82,7 @@ nav a:first-of-type {
 nav a.home {
   font-size: 1rem;
 }
+
 nav a.home span {
   opacity: 0.5;
   margin: 0 .175rem;
@@ -102,15 +107,8 @@ section h2 {
 
 #app {
   margin: 0 auto;
+  max-width: 1140px;
   font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
 .squares {
@@ -148,5 +146,5 @@ a,
 .squares span {
   align-content: center;
   text-align: center;
-  background-color: hsla(160, 100%, 37%, 1);
+  background-color: var(--color-background-mute);
 }

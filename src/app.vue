@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink class="home" to="/"><span>&lt;</span>pablobbb<span>/&gt;</span></RouterLink>
+      <div class="logo"><RouterLink class="home" to="/"><span>&lt;</span>pablobbb<span>/&gt;</span></RouterLink></div>
       <div class="social">
         <a href="https://www.linkedin.com/in/pablobonucci" target="_blank" alt="LinkedIn"><img class="linkedin" src="/src/assets/icon-linkedin.svg"></a>
         <a href="https://twitter.com/fresh_rapp" target="_blank" alt="X"><img src="/src/assets/icon-x.svg"></a>
