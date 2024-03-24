@@ -74,7 +74,6 @@ section:nth-child(even) {
 }
 
 #app {
-  max-width: 1140px;
   margin: 0 auto;
   font-weight: normal;
 }
