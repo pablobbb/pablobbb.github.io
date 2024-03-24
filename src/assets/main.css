@@ -38,11 +38,22 @@ header, footer {
   padding: 1rem 0;
 }
 
+header div.social img {
+  width: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header div.social img.linkedin {
+  width: .95rem;
+}
+
 nav {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: space-between;
+  align-items: center;
   font-size: 12px;
 }
 
@@ -62,6 +73,14 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
+}
+
+nav a.home {
+  font-size: 1rem;
+}
+nav a.home span {
+  opacity: 0.5;
+  margin: 0 .175rem;
 }
 
 section {
@@ -94,11 +113,6 @@ a,
   padding: 3px;
 }
 
-/* .squares {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-} */
 .squares {
   display: grid;
   gap: 1rem;
