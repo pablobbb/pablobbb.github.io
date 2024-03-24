@@ -81,6 +81,7 @@ nav a:first-of-type {
 
 nav a.home {
   font-size: 1rem;
+  text-decoration: none;
 }
 
 nav a.home span {
