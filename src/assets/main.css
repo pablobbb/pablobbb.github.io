@@ -1,9 +1,88 @@
 @import './base.css';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1 small {
+  font-size: 1.5rem;
+  display: block;
+}
+
+header, footer {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: space-between;
+  font-size: 12px;
+}
+
+nav a.router-link-exact-active {
+  color: var(--color-text);
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+section {
+  min-height: 100dvh;
+  padding: 1rem;
+  display: grid;
+  align-items: flex-start;
+  align-content: center;
+}
+
+section:nth-child(even) {
+  background-color: var(--color-background-soft);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
 #app {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
 
@@ -15,21 +94,45 @@ a,
   padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+/* .squares {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+} */
+.squares {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.squares::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.squares > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+@media (min-width: 500px) {
+  .squares {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+  .squares {
+    grid-template-columns: repeat(5, 1fr);
   }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.squares span {
+  align-content: center;
+  text-align: center;
+  background-color: hsla(160, 100%, 37%, 1);
 }
