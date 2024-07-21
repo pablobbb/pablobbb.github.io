@@ -18,6 +18,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <a href="https://github.com/pablobbb" target="_blank"
           ><i class="fa-brands fa-github"></i
         ></a>
+        <a href="https://medium.com/@pablobbb" target="_blank"
+          ><i class="fa-brands fa-medium"></i
+        ></a>
       </div>
     </nav>
   </header>
