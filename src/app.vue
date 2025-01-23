@@ -24,5 +24,5 @@ import { RouterLink, RouterView } from 'vue-router'
   <main>
     <RouterView />
   </main>
-  <footer>&copy; 2024</footer>
+  <footer>&copy; {{ new Date().getFullYear() }}</footer>
 </template>
