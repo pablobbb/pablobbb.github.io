@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="welcome">
-      <h1>Hi! 👋 I'm Pablo <small>Senior Frontend Developer @ QubicaAMF Europe</small></h1>
+      <h1>Hi! 👋 I'm Pablo <small>Lead Frontend Engineer @ iubenda</small></h1>
       <p>
         I'm a Web Developer specialized in crafting advanced applications and optimizing development
         processes. I actively strive to improve the code quality and performance of the software I
