@@ -1,14 +1,42 @@
 <template>
-  <section>
-    <div class="welcome">
-      <h1>Hi! 👋 I'm Pablo <small>Senior Frontend Developer @ QubicaAMF Europe</small></h1>
-      <p>
-        I'm a Web Developer specialized in crafting advanced applications and optimizing development
-        processes. I actively strive to improve the code quality and performance of the software I
-        work on, without neglecting the Developer Experience so sought after by (us) developers.
-        <br /><br />I am an advocate of Agile Methodologies to facilitate Continuous Integration /
-        Continuous Delivery (CI/CD) for complex projects that are constantly evolving.
-      </p>
-    </div>
-  </section>
+  <Transition
+    name="fade"
+    appear
+  >
+    <section>
+      <div class="welcome">
+        <h1>Hi! <span class="wave">👋</span> I'm Pablo <small>Lead Frontend Engineer @ iubenda</small></h1>
+        <p>
+          I'm a Web Developer who builds advanced apps and makes development work better. I'm really passionate about creating high-quality software, while making sure it's still enjoyable for developers to work with! <br /><br />I strongly believe in Agile methods to help with Continuous Integration /
+          Continuous Delivery (CI/CD) for complex projects that need to evolve and change over time. I love improving code quality and optimizing processes.
+        </p>
+      </div>
+    </section>
+  </Transition>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave .5s linear 1.5;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+</style>
