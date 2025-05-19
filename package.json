@@ -17,16 +17,16 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue": "^3.5.14",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.11.0",
-    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/node20": "^20.1.5",
     "@types/gh-pages": "^6.1.0",
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^20.17.24",
-    "@vitejs/plugin-vue": "^5.2.3",
+    "@types/node": "^20.17.48",
+    "@vitejs/plugin-vue": "^5.2.4",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.5.0",
     "@vue/test-utils": "^2.4.6",
@@ -37,10 +37,10 @@
     "jsdom": "^24.1.3",
     "npm-run-all2": "^6.2.6",
     "prettier": "^3.5.3",
-    "typescript": "~5.5.4",
-    "vite": "^5.4.14",
+    "typescript": "~5.8.3",
+    "vite": "^5.4.19",
     "vitest": "^1.6.1",
-    "vue-tsc": "^2.2.8"
+    "vue-tsc": "^2.2.10"
   },
-  "packageManager": "yarn@4.7.0"
+  "packageManager": "yarn@4.9.1"
 }
