@@ -1,0 +1,28 @@
+# Pablo Bonucci — pablobbb.github.io
+
+## Who I am
+
+Pablo Bonucci is a Principal Frontend Engineer with 15+ years of experience building frontend systems and the teams that build them well. He specialises in design systems and frontend architecture.
+
+## Current role
+
+Principal Frontend Engineer at iubenda, a legal tech product used by 1M+ businesses worldwide. Setting the technical vision for frontend across B2B and B2C surfaces.
+
+## Background
+
+- Built a 30+ component design system from scratch at QubicaAMF
+- Migrated 3+ legacy products to Vue 3 + TypeScript, reducing bundle size by ~25%
+- Mentored engineers across all seniority levels
+- Co-founded Z-INDEX99, a web agency that delivered 20+ projects
+- Deep expertise in Vue.js, TypeScript, JavaScript, design systems, and frontend architecture
+
+## What I write about
+
+Technical articles on design systems, Vue.js, frontend architecture, and engineering leadership. Published on this site and on Medium (@pablobbb).
+
+## Links
+
+- Website: https://pablobbb.github.io
+- LinkedIn: https://www.linkedin.com/in/pablobonucci
+- GitHub: https://github.com/pablobbb
+- Medium: https://medium.com/@pablobbb
