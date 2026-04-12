@@ -2,16 +2,13 @@
   <Transition name="fade" appear>
     <section>
       <div class="welcome">
-        <h1>
-          Hi! <span class="wave">👋</span> I'm Pablo
-          <small>Principal Frontend Engineer @ iubenda</small>
-        </h1>
-        <p>
-          I'm a Web Developer who builds advanced apps and makes development work better. I'm really
-          passionate about creating high-quality software, while making sure it's still enjoyable
-          for developers to work with! <br /><br />I strongly believe in Agile methods to help with
-          Continuous Integration / Continuous Delivery (CI/CD) for complex projects that need to
-          evolve and change over time. I love improving code quality and optimizing processes.
+        <h1>Hi! <span class="wave">👋</span><span class="name"> I'm Pablo Bonucci</span><small>Principal Frontend Engineer</small></h1>
+        <p class="bio">+15 years building frontend systems and the teams that build them well.
+          <br>
+          I focus on design systems, frontend architecture, and the foundations that make product
+          teams faster and less frustrated.
+          <br><br>
+          Currently setting the technical vision at iubenda, a product used by 1M+ people.
         </p>
       </div>
     </section>
@@ -27,6 +24,12 @@
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .name {
+    display: block;
+  }
 }
 
 .wave {
