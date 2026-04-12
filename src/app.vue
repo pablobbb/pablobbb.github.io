@@ -14,7 +14,9 @@ onMounted(() => {
   <header>
     <nav>
       <div class="logo">
-        <RouterLink class="home" to="/"><span>&lt;</span>Pablo Bonucci<span>/&gt;</span></RouterLink>
+        <RouterLink class="home" to="/"
+          ><span>&lt;</span>Pablo Bonucci<span>/&gt;</span></RouterLink
+        >
       </div>
       <div class="social">
         <a href="https://www.linkedin.com/in/pablobonucci" target="_blank" aria-label="LinkedIn"
@@ -35,8 +37,18 @@ onMounted(() => {
   <footer>
     <span>&copy; {{ new Date().getFullYear() }}</span>
     <span class="iubenda-links">
-      <a href="https://www.iubenda.com/privacy-policy/68647362" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy">Privacy Policy</a>
-      <a href="https://www.iubenda.com/privacy-policy/68647362/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy">Cookie Policy</a>
+      <a
+        href="https://www.iubenda.com/privacy-policy/68647362"
+        class="iubenda-white iubenda-noiframe iubenda-embed"
+        title="Privacy Policy"
+        >Privacy Policy</a
+      >
+      <a
+        href="https://www.iubenda.com/privacy-policy/68647362/cookie-policy"
+        class="iubenda-white iubenda-noiframe iubenda-embed"
+        title="Cookie Policy"
+        >Cookie Policy</a
+      >
     </span>
   </footer>
 </template>
