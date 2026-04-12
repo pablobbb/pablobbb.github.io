@@ -26,7 +26,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   color: var(--pbbb-color);
   background: var(--pbbb-bg);
   background: repeating-linear-gradient(
@@ -59,7 +58,26 @@ header,
 footer {
   font-size: 0.75rem;
   text-align: center;
+}
+
+header {
   padding: 1rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer .iubenda-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.iub__us-widget__link {
+  font-size: 0.5rem !important;
 }
 
 header div.social {
@@ -123,12 +141,26 @@ section h2 {
   max-width: 36rem;
 }
 
+body {
+  min-height: 100vh;
+}
+
 #app {
   margin: 0 auto;
   max-width: 1360px;
   display: grid;
-  height: 100vh;
+  min-height: calc(100vh - 56px);
   align-content: space-between;
   padding: 0 1rem;
   font-weight: normal;
+}
+
+.tagline {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.bio {
+  margin-bottom: 1rem;
+  line-height: 1.75;
 }
