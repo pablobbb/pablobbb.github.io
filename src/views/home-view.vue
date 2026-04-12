@@ -2,12 +2,16 @@
   <Transition name="fade" appear>
     <section>
       <div class="welcome">
-        <h1>Hi! <span class="wave">👋</span><span class="name"> I'm Pablo Bonucci</span><small>Principal Frontend Engineer</small></h1>
-        <p class="bio">+15 years building frontend systems and the teams that build them well.
-          <br>
+        <h1>
+          Hi! <span class="wave">👋</span><span class="name"> I'm Pablo Bonucci</span
+          ><small>Principal Frontend Engineer</small>
+        </h1>
+        <p class="bio">
+          +15 years building frontend systems and the teams that build them well.
+          <br />
           I focus on design systems, frontend architecture, and the foundations that make product
           teams faster and less frustrated.
-          <br><br>
+          <br /><br />
           Currently setting the technical vision at iubenda, a product used by 1M+ people.
         </p>
       </div>
