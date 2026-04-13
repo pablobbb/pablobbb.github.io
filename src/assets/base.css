@@ -1,5 +1,14 @@
 :root {
-  --pbbb-color: #8ea8c9;
-  --pbbb-bg: #151921;
-  --pbbb-bg-opt: #1c212d;
+  --color-bg: #151921;
+  --color-bg-stripe: #1c212d;
+  --color-text: #8ea8c9;
+  --color-muted: #4a637c;
+  --color-accent: #d4693a;
+  --color-border: #1e2633;
+
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'JetBrains Mono', monospace;
+
+  --content-width: 680px;
+  --transition-link: color 0.15s ease;
 }

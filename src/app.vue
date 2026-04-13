@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 
 onMounted(() => {
   const script = document.createElement('script')
@@ -11,32 +11,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <header>
-    <nav>
-      <div class="logo">
-        <RouterLink class="home" to="/"
-          ><span>&lt;</span>Pablo Bonucci<span>/&gt;</span></RouterLink
-        >
-      </div>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/pablobonucci" target="_blank" aria-label="LinkedIn"
-          ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
-        ></a>
-        <a href="https://github.com/pablobbb" target="_blank" aria-label="GitHub"
-          ><i class="fa-brands fa-github" aria-hidden="true"></i
-        ></a>
-        <a href="https://medium.com/@pablobbb" target="_blank" aria-label="Medium"
-          ><i class="fa-brands fa-medium" aria-hidden="true"></i
-        ></a>
-      </div>
-    </nav>
-  </header>
   <main>
     <RouterView />
   </main>
   <footer>
-    <span>&copy; {{ new Date().getFullYear() }}</span>
-    <span class="iubenda-links">
+    <span>&copy; {{ new Date().getFullYear() }} Pablo Bonucci</span>
+    <span class="footer-links">
       <a
         href="https://www.iubenda.com/privacy-policy/68647362"
         class="iubenda-white iubenda-noiframe iubenda-embed"

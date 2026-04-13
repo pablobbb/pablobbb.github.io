@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Geist+Mono:wght@400;500&display=swap">
   <script src="https://kit.fontawesome.com/5565033308.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,7 +17,7 @@
   <meta name="description" content="Principal Frontend Engineer specialising in design systems and frontend architecture. 15+ years building frontend systems and the teams that build them well." />
   <meta property="og:title" content="Pablo Bonucci — Principal Frontend Engineer" />
   <meta property="og:description" content="Principal Frontend Engineer specialising in design systems and frontend architecture. 15+ years building frontend systems and the teams that build them well." />
-  <meta property="og:url" content="https://pablobbb.github.io" />
+  <meta property="og:url" content="https://pablobonucci.com" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <script type="text/javascript" src="https://embeds.iubenda.com/widgets/931d36fc-e11d-40dc-b0c5-c22fcfe46763.js" async></script>
@@ -28,7 +28,7 @@
     "name": "Pablo Bonucci",
     "jobTitle": "Principal Frontend Engineer",
     "description": "Principal Frontend Engineer specialising in design systems and frontend architecture. 15+ years building frontend systems and the teams that build them well.",
-    "url": "https://pablobbb.github.io",
+    "url": "https://pablobonucci.com",
     "sameAs": [
       "https://www.linkedin.com/in/pablobonucci",
       "https://github.com/pablobbb",
@@ -50,6 +50,12 @@
 </head>
 
 <body>
+  <script>
+    ;(function () {
+      var p = new URLSearchParams(window.location.search).get('p')
+      if (p) window.history.replaceState(null, '', p)
+    })()
+  </script>
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
 </body>
